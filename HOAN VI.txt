@@ -1,0 +1,49 @@
+void HoanVi(int *a, int *b)
+{
+	int temp = *a;
+	*a = *b;
+	*b = temp;	
+}
+
+void HoanVi(int &a, int &b)
+{
+	int temp = a;
+	a = b;
+	b = temp;	
+}
+
+void HoanVi(int &a, int &b)
+{	
+//===== CACH DE HIEU HON: A = 10, B = 15 ===========	
+    a=a+b; //a = 25  (10 + 15)     
+    b=a-b; //b = 10  (25 - 15)    
+    a=a-b; //a = 15  (25 - 10)
+
+//===== CACH PHUC TAP HON: A = 10, B = 15 ===========
+	a = a - b; // a = 10 - 15 = -5
+	b = a + b; // b = -5 + 15 = 10
+	a = b - a; // a = 10 -(-5) = 15
+}
+
+HAI CACH HOAN VI KHAC TREN: https://hiepsiit.com/detail/csharp/ngonngulaptrinhcsharp/hoanvi
+C1:
+ int  a=5, b=10;            
+       a=a*b; //a=50 (5*10)      
+       b=a/b; //b=5 (50/10)      
+       a=a/b; //a=10 (50/5) 
+
+C2:
+ int  a=5, b=10;            
+       a=a+b; //a=15 (5+10)      
+       b=a-b; //b=5 (15-10)      
+       a=a-b; //a=10 (15-5)  
+
+================BÀI TOÁN ĐẶT RA =========================
+Xây dựng template cho hàm HoanVi để có thể linh động các kiểu dữ liệu.
+template <class T> 
+void HoanVi(T *a, T *b)
+{
+	T temp = *a;
+	*a = *b;
+	*b = temp;
+} 
