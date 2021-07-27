@@ -1,0 +1,90 @@
+SAU ĐÂY TA CẦN TÁCH BIỆT RA: C VÀ C++
+C: THƯ VIỆN C RIÊNG VÀ TỪ KHÓA RIÊNG
+C++ : THƯ VIỆN C++ RIÊNG VÀ TỪ KHÓA RIÊNG
+
+//====================================================================
+XEM GIỚI THIỆU CÁC THƯ VIỆN CHUẨN CỦA C: 
+https://vi.wikipedia.org/wiki/Th%C6%B0_vi%E1%BB%87n_chu%E1%BA%A9n_C
+
+//====================================================================
+XEM GIỚI THIỆU CÁC THƯ VIỆN CHUẨN CỦA C++: 
+https://vi.wikipedia.org/wiki/Th%C6%B0_vi%E1%BB%87n_chu%E1%BA%A9n_C%2B%2B
+//====================================================================
+
+//=================== CHUONG TRINH C - BEGIN =================================================
+#include <assert.h>
+#include <conio.h> //=> khai báo getch()
+#include <float.h>
+#include <limits.h>
+#include <math.h>
+#include <stdio.h> //=> khai báo PRINTF VÀ SCANF
+#include <stdlib.h> //=> cấp phát động, sinh số ngẫu nhiên
+#include <string.h> //=> Để điều chỉnh nhiều loại dãy ký tự.
+#include <time.h> 
+/*-------------------------------------------------------------------
+
+--------------------------------------------------------------------*/
+
+//====================================================================
+//====================================================================
+//====================================================================
+
+int main()
+{
+	
+	getch();// Lợi dụng chức năng của getch để
+               // dừng màn hình console sau khi xuất kết quả.
+	return 0;
+}
+//===================== CHUONG TRINH C - END ===============================================
+
+//==================== CHUONG TRINH C++ ============================================
+//#include <string> //=> Các dãy ký tự
+		    //=>Định nghĩa thùng chứa lớp tiêu bản basic_string và nhiều hỗ trợ cho các tiêu bản khung
+
+//==================== CHUONG TRINH C++ - BEGIN =================================
+#include <iostream> //=> khai báo 2 object: COUT và CIN 
+#include <string>  
+#include <cassert>
+
+#include <cfloat>
+#include <climits>
+#include <cmath>
+#include <cstdio> //=> khai báo PRINTF VÀ SCANF
+#include <cstdlib> //=> cấp phát động, sinh số ngẫu nhiên
+#include <cstring> //=> Để điều chỉnh nhiều loại dãy ký tự.
+#include <ctime> 
+using namespace std; 
+/*-------------------------------------------------------------------
+
+--------------------------------------------------------------------*/
+
+//====================================================================
+//====================================================================
+//====================================================================
+int main()
+{
+	
+	sytem("pause");
+	return 0;
+}
+//===================== CHUONG TRINH C++ - END ===============================================
+
+//============================================================
+https://daynhauhoc.com/t/khai-bao-thu-vien-cua-c-va-c-xen-lan-co-sao-khong/6046/9
+stdio.h là thư viện của C. 
+Chủ yếu để dùng hàm scanf và printf, tốc độ biên dịch nhanh. 
+Nhưng khi nhập liệu thì phải định rõ kiểu dữ liệu ở đối số của hàm
+
+iostream là thư viện của C++. Chủ yếu để dùng 2 object cin và cout, 
+khi dùng 2 thằng này thì tốc độ biên dịch chậm hơn nhiều so với stdio.h 
+vì nó được dùng qua stream. Khi nhập liệu thì ko cần định rõ kiểu dữ liệu
+//==============================================================
+cstdio là thư viện của C++ để gọi các hàm thuộc về C. 
+@14520054 để ý mình sẽ thấy chữ c ở phía trước stdio. 
+Có nghĩa đây là thư viện của C++ nhưng mà phục vụ cho việc gọi hàm của C. 
+Các thư viện tương tự như
+
+cstring để thay cho string.h trong C
+cmath thay cho math.h
+ctime thay cho time.h
